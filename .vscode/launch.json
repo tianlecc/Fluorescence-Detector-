@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/lisitong/Documents/ese5160/final-project-t16-slap-queen-1/Application/src/Peripherals",
+      "program": "/Users/lisitong/Documents/ese5160/final-project-t16-slap-queen-1/Application/src/Peripherals/build/Debug/outDebug"
+    }
+  ]
+}

@@ -1,0 +1,1220 @@
+[
+    {
+        "id": "e1e1b76ba13d786c",
+        "type": "tab",
+        "label": "Fluorescence Detection UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cda4529d71f71772",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Detection Result",
+        "topic": "device/detect_result",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 780,
+        "y": 340,
+        "wires": [
+            [
+                "c04116047a4b53b5"
+            ]
+        ]
+    },
+    {
+        "id": "fb11fb61c1020673",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "Detect Button",
+        "group": "08ac3a6add06de3a",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Detect",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "cloud/command/detect",
+        "topicType": "str",
+        "x": 810,
+        "y": 1260,
+        "wires": [
+            [
+                "cab10cbafc1a810e"
+            ]
+        ]
+    },
+    {
+        "id": "56f19bcf19b48257",
+        "type": "ui_gauge",
+        "z": "e1e1b76ba13d786c",
+        "name": "Temperature Gauge",
+        "group": "a2d46e4777fe5b15",
+        "order": 1,
+        "width": 4,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Current Temperature",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 50,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "40",
+        "seg2": "45",
+        "diff": false,
+        "className": "",
+        "x": 560,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "fc02e663e80115fd",
+        "type": "ui_chart",
+        "z": "e1e1b76ba13d786c",
+        "name": "Temperature Chart",
+        "group": "a2d46e4777fe5b15",
+        "order": 1,
+        "width": 4,
+        "height": 4,
+        "label": "Temperature Over Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": 0,
+        "ymax": 50,
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000",
+            "#000000"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 550,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdd8060ca32d6685",
+        "type": "ui_text",
+        "z": "e1e1b76ba13d786c",
+        "group": "08ac3a6add06de3a",
+        "order": 1,
+        "width": "6",
+        "height": "2",
+        "name": "System Instruction",
+        "label": "Instruction",
+        "format": "1. When the temperature reaches 40C and is stable, insert the chiplet. 2. Click \"Detect\" button. 3. Read the result.",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 790,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "c04116047a4b53b5",
+        "type": "ui_text",
+        "z": "e1e1b76ba13d786c",
+        "group": "631aabfb6fed4c51",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "name": "Detection Result",
+        "label": "Detection Result",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1180,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "cab10cbafc1a810e",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Send Detect Command",
+        "topic": "cloud/command/detect",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 1070,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "46aa22308ae97ebe",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset Button",
+        "group": "08ac3a6add06de3a",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Reset",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "cloud/command/reset",
+        "topicType": "str",
+        "x": 100,
+        "y": 1080,
+        "wires": [
+            [
+                "0e72b9ec9e98a768"
+            ]
+        ]
+    },
+    {
+        "id": "0e72b9ec9e98a768",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Send Reset Command",
+        "topic": "cloud/command/reset",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 360,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "dbe2f6f71e887f1c",
+        "type": "debug",
+        "z": "e1e1b76ba13d786c",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "5f115c0d574b2a79",
+        "type": "ui_text_input",
+        "z": "e1e1b76ba13d786c",
+        "name": "",
+        "label": "Temperature",
+        "tooltip": "",
+        "group": "f14453b7f9546566",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 770,
+        "y": 680,
+        "wires": [
+            [
+                "ac04918599a65d3b"
+            ]
+        ]
+    },
+    {
+        "id": "ac04918599a65d3b",
+        "type": "change",
+        "z": "e1e1b76ba13d786c",
+        "name": "store input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp_value",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 970,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8a421d17bf1627b",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "",
+        "group": "f14453b7f9546566",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Publish Temp",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 780,
+        "y": 740,
+        "wires": [
+            [
+                "87b6058e2a9426bf"
+            ]
+        ]
+    },
+    {
+        "id": "87b6058e2a9426bf",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "send temp to MQTT",
+        "func": "var val = flow.get(\"temp_value\");\nif (!isNaN(val)) {\n    return {\n        payload: Number(val),\n        topic: \"device/temperature\"\n    };\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 740,
+        "wires": [
+            [
+                "33d95c16ee39d751",
+                "dbe2f6f71e887f1c"
+            ]
+        ]
+    },
+    {
+        "id": "33d95c16ee39d751",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Publish to Temp Topic",
+        "topic": "device/temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 1250,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "mqtt-temp-in",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Temperature In",
+        "topic": "device/temperature",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "check-overheat"
+            ]
+        ]
+    },
+    {
+        "id": "check-overheat",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Check Overheat",
+        "func": "var temp = Number(msg.payload);\nvar outputs = [null, null];\n\nif (!isNaN(temp)) {\n    // chart\n    outputs[0] = { payload: temp };\n\n    // if overheat\n    if (temp > 50) {\n        outputs[1] = {\n            payload: \"reset\",\n            topic: \"cloud/command/reset\"\n        };\n    }\n}\n\nreturn outputs;",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [
+                "56f19bcf19b48257",
+                "fc02e663e80115fd"
+            ],
+            [
+                "mqtt-reset-out",
+                "e20257ec8b79678a"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt-reset-out",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset",
+        "topic": "cloud/command/reset",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 510,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "e20257ec8b79678a",
+        "type": "debug",
+        "z": "e1e1b76ba13d786c",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "mqtt-reset-in",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset In",
+        "topic": "cloud/command/reset",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 80,
+        "y": 740,
+        "wires": [
+            [
+                "clear-chart"
+            ]
+        ]
+    },
+    {
+        "id": "clear-chart",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Clear Chart",
+        "func": "return {\n    payload: [],\n    topic: \"reset\"\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 740,
+        "wires": [
+            [
+                "fc02e663e80115fd"
+            ]
+        ]
+    },
+    {
+        "id": "b2a51af8fcd21e4a",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "Start Heating Button",
+        "group": "a2d46e4777fe5b15",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Start Heating",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 110,
+        "y": 860,
+        "wires": [
+            [
+                "6a18ec2e10a796f4"
+            ]
+        ]
+    },
+    {
+        "id": "6a18ec2e10a796f4",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Start Heating Logic",
+        "func": "var outputs = [null, null];\n\n// Output 1: MQTT \noutputs[0] = {\n    topic: \"cloud/command/heating\",\n    payload: \"start\"\n};\n\n// Output 2: UI \noutputs[1] = {\n    payload: \"ON\"\n};\n\nreturn outputs;\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 860,
+        "wires": [
+            [
+                "1236bf5d3ba6a9ae"
+            ],
+            [
+                "693bac9a062b3d80"
+            ]
+        ]
+    },
+    {
+        "id": "693bac9a062b3d80",
+        "type": "ui_text",
+        "z": "e1e1b76ba13d786c",
+        "group": "a2d46e4777fe5b15",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "name": "Heating Status",
+        "label": "Heating Status",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 800,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "1236bf5d3ba6a9ae",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Start Heating",
+        "topic": "cloud/command/heating",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 790,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "343f35845b9a8bd1",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "Stop Heating Button",
+        "group": "a2d46e4777fe5b15",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Stop Heating",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 120,
+        "y": 960,
+        "wires": [
+            [
+                "c0e8d65e80aa6323"
+            ]
+        ]
+    },
+    {
+        "id": "c0e8d65e80aa6323",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Stop Heating Logic",
+        "func": "var outputs = [null, null];\n\n// Output 1: MQTT \noutputs[0] = {\n    topic: \"cloud/command/heating\",\n    payload: \"stop\"\n};\n\n// Output 2: UI \noutputs[1] = {\n    payload: \"OFF\"\n};\n\nreturn outputs;\n",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 960,
+        "wires": [
+            [
+                "394abc686b6307f7"
+            ],
+            [
+                "693bac9a062b3d80"
+            ]
+        ]
+    },
+    {
+        "id": "394abc686b6307f7",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Stop Heating",
+        "topic": "cloud/command/heating",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 790,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "4c379e03e2ab23ee",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Light Intensity",
+        "topic": "device/light_intensity",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 770,
+        "y": 500,
+        "wires": [
+            [
+                "f309f69d32c09866"
+            ]
+        ]
+    },
+    {
+        "id": "f309f69d32c09866",
+        "type": "ui_text",
+        "z": "e1e1b76ba13d786c",
+        "group": "631aabfb6fed4c51",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "name": "Light Intensity",
+        "label": "Light Intensity",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1220,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f5a8268db12b4571",
+        "type": "debug",
+        "z": "e1e1b76ba13d786c",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "cdf918141b63eb30",
+        "type": "ui_text_input",
+        "z": "e1e1b76ba13d786c",
+        "name": "",
+        "label": "Light Intensity",
+        "tooltip": "",
+        "group": "f14453b7f9546566",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "str",
+        "x": 800,
+        "y": 1100,
+        "wires": [
+            [
+                "0eee3342bd25a44a"
+            ]
+        ]
+    },
+    {
+        "id": "0eee3342bd25a44a",
+        "type": "change",
+        "z": "e1e1b76ba13d786c",
+        "name": "store input",
+        "rules": [
+            {
+                "t": "set",
+                "p": "light_intensity",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "x": 990,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0206a33893eb9e1",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "",
+        "group": "f14453b7f9546566",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Publish Light",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "topicType": "str",
+        "x": 790,
+        "y": 1160,
+        "wires": [
+            [
+                "b13d7b02c30ed927"
+            ]
+        ]
+    },
+    {
+        "id": "b13d7b02c30ed927",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "send light intensity to MQTT",
+        "func": "var val = flow.get(\"light_intensity\");\nif (!isNaN(val)) {\n    return {\n        payload: Number(val),\n        topic: \"device/light_intensity\"\n    };\n}\nreturn null;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1160,
+        "wires": [
+            [
+                "87fd08a1c54d5637",
+                "f5a8268db12b4571"
+            ]
+        ]
+    },
+    {
+        "id": "87fd08a1c54d5637",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Publish to Light Topic",
+        "topic": "device/light_intensity",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 1340,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d35545dbaf2c939c",
+        "type": "ui_text",
+        "z": "e1e1b76ba13d786c",
+        "group": "f14453b7f9546566",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Detection command from UI debugging",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1350,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "ae5221ec49ce33d9",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Publish to Result Topic",
+        "topic": "device/detect_result",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 1300,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6803933a2fca26aa",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "",
+        "group": "f14453b7f9546566",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Positive",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "POSITIVE",
+        "payloadType": "str",
+        "topic": "device/detect_result",
+        "topicType": "str",
+        "x": 1040,
+        "y": 860,
+        "wires": [
+            [
+                "ae5221ec49ce33d9"
+            ]
+        ]
+    },
+    {
+        "id": "6b192bd2049b52e0",
+        "type": "ui_button",
+        "z": "e1e1b76ba13d786c",
+        "name": "",
+        "group": "f14453b7f9546566",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Negative",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "NEGATIVE",
+        "payloadType": "str",
+        "topic": "device/detect_result",
+        "topicType": "str",
+        "x": 1040,
+        "y": 940,
+        "wires": [
+            [
+                "06ce2d87de393e10"
+            ]
+        ]
+    },
+    {
+        "id": "06ce2d87de393e10",
+        "type": "mqtt out",
+        "z": "e1e1b76ba13d786c",
+        "name": "Publish to Result Topic",
+        "topic": "device/detect_result",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "739805c23e55ea2a",
+        "x": 1300,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "239c26273c8d7b8e",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset ",
+        "topic": "cloud/command/reset",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 1020,
+        "wires": [
+            [
+                "c0e8d65e80aa6323"
+            ]
+        ]
+    },
+    {
+        "id": "50377e05119e7590",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset In",
+        "topic": "cloud/command/reset",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 760,
+        "y": 260,
+        "wires": [
+            [
+                "5b5865f4a8e3d39c"
+            ]
+        ]
+    },
+    {
+        "id": "5b5865f4a8e3d39c",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Clear Result",
+        "func": "return {\n    payload: \"\",\n    topic: \"reset\"\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 260,
+        "wires": [
+            [
+                "c04116047a4b53b5"
+            ]
+        ]
+    },
+    {
+        "id": "38b3b5eaf41f9cad",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset In",
+        "topic": "cloud/command/reset",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 760,
+        "y": 420,
+        "wires": [
+            [
+                "03b1f1eb0a7e599a"
+            ]
+        ]
+    },
+    {
+        "id": "03b1f1eb0a7e599a",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Clear Intensity",
+        "func": "return {\n    payload: \"\",\n    topic: \"reset\"\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 420,
+        "wires": [
+            [
+                "f309f69d32c09866"
+            ]
+        ]
+    },
+    {
+        "id": "c854297178b86478",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Detecion command from UI debugging",
+        "topic": "cloud/command/detect",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 870,
+        "y": 1340,
+        "wires": [
+            [
+                "d35545dbaf2c939c"
+            ]
+        ]
+    },
+    {
+        "id": "430c56c9097bb6a8",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset In",
+        "topic": "cloud/command/reset",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 500,
+        "wires": [
+            [
+                "c9136e5ff6924de8"
+            ]
+        ]
+    },
+    {
+        "id": "c9136e5ff6924de8",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Clear Temp",
+        "func": "return {\n    payload: \"\",\n    topic: \"reset\"\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "56f19bcf19b48257"
+            ]
+        ]
+    },
+    {
+        "id": "b528e6c87d70bdff",
+        "type": "mqtt in",
+        "z": "e1e1b76ba13d786c",
+        "name": "Reset In",
+        "topic": "cloud/command/reset",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "739805c23e55ea2a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 780,
+        "y": 1420,
+        "wires": [
+            [
+                "405add8cf49b042b"
+            ]
+        ]
+    },
+    {
+        "id": "405add8cf49b042b",
+        "type": "function",
+        "z": "e1e1b76ba13d786c",
+        "name": "Clear Detection Command",
+        "func": "return {\n    payload: \"\",\n    topic: \"reset\"\n};",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 1420,
+        "wires": [
+            [
+                "d35545dbaf2c939c"
+            ]
+        ]
+    },
+    {
+        "id": "739805c23e55ea2a",
+        "type": "mqtt-broker",
+        "name": "MqttBroker",
+        "broker": "52.151.18.200",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "08ac3a6add06de3a",
+        "type": "ui_group",
+        "name": "Control Panel",
+        "tab": "ui-tab",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2d46e4777fe5b15",
+        "type": "ui_group",
+        "name": "Temperature",
+        "tab": "ui-tab",
+        "order": 4,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "631aabfb6fed4c51",
+        "type": "ui_group",
+        "name": "Detection Result",
+        "tab": "ui-tab",
+        "order": 3,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f14453b7f9546566",
+        "type": "ui_group",
+        "name": "Debug",
+        "tab": "ui-tab",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "ui-tab",
+        "type": "ui_tab",
+        "name": "Fluorescence Detection",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]

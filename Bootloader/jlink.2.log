@@ -1,0 +1,1307 @@
+T4548 17378:373.632   SEGGER J-Link V7.98 Log File
+T4548 17378:373.632   DLL Compiled: Jul 17 2024 15:27:15
+T4548 17378:373.632   Logging started @ 2025-04-23 02:24
+T4548 17378:373.632   Process: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atbackend.exe
+T4548 17378:373.632 - 6371.949ms
+T4548 17378:375.680 JLINK_ExecCommand("Device = ATSAMD21G18A", ...). 
+T4548 17378:375.680   Device "ATSAMD21G18A" selected.
+T4548 17378:375.680 - 0.422ms returns 0x00
+T4548 17378:562.048 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T4548 17378:562.048 - 0.605ms returns 0x00
+T4548 17378:562.048 JLINK_SetSpeed(2000)
+T4548 17378:562.048 - 0.068ms
+T4548 17378:562.048 JLINK_ResetPullsRESET(OFF)
+T4548 17378:562.048 - 0.014ms
+T4548 17378:564.096 JLINK_Connect()
+T4548 17378:564.096   InitTarget() start
+T4548 17378:564.096    J-Link Script File: Executing InitTarget()
+T4548 17378:564.096   InitTarget()
+T4548 17378:566.144   InitTarget() end - Took 2.21ms
+T4548 17378:568.192   Found SW-DP with ID 0x0BC11477
+T4548 17378:570.240   DPIDR: 0x0BC11477
+T4548 17378:570.240   CoreSight SoC-400 or earlier
+T4548 17378:570.240   Scanning AP map to find all available APs
+T4548 17378:570.240   AP[1]: Stopped AP scan as end of AP map has been reached
+T4548 17378:570.240   AP[0]: AHB-AP (IDR: 0x04770031)
+T4548 17378:570.240   Iterating through AP map to find AHB-AP to use
+T4548 17378:570.240   AP[0]: Core found
+T4548 17378:570.240   AP[0]: AHB-AP ROM base: 0x41003000
+T4548 17378:570.240   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T4548 17378:570.240   Found Cortex-M0 r0p1, Little endian.
+T4548 17378:570.240   -- Max. mem block: 0x00002B08
+T4548 17378:572.288   Cortex-M: The connected J-Link (S/N 801056870) uses an old firmware module: V2 (current is 3)
+T4548 17378:572.288   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4548 17378:572.288   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T4548 17378:572.288   CPU_ReadMem(4 bytes @ 0xE0002000)
+T4548 17378:572.288   FPUnit: 4 code (BP) slots and 0 literal slots
+T4548 17378:572.288   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4548 17378:572.288   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4548 17378:574.336   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4548 17378:574.336   CPU_WriteMem(4 bytes @ 0xE0001000)
+T4548 17378:574.336   CoreSight components:
+T4548 17378:574.336   ROMTbl[0] @ 41003000
+T4548 17378:574.336   CPU_ReadMem(64 bytes @ 0x41003000)
+T4548 17378:576.384   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T4548 17378:576.384   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T4548 17378:576.384   ROMTbl[1] @ E00FF000
+T4548 17378:576.384   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T4548 17378:576.384   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T4548 17378:578.432   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T4548 17378:578.432   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T4548 17378:578.432   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T4548 17378:578.432   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T4548 17378:578.432   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T4548 17378:578.432   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T4548 17378:578.432   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T4548 17378:578.432 - 15.401ms returns 0x00
+T4548 17378:578.432 JLINK_ExecCommand("ExcludeFlashCacheRange 0x0 - 0x40000", ...). 
+T4548 17378:578.432 - 0.000ms returns 0x00
+T4548 17378:578.432 JLINK_Halt()
+T4548 17378:582.528 - 3.506ms returns 0x00
+T4548 17378:584.576 JLINK_JTAG_GetDeviceID(DeviceIndex = 0)
+T4548 17378:584.576 - 0.018ms returns 0
+T4548 17378:584.576 JLINK_ReadMemU32(0x41002018, 0x1 Items)
+T4548 17378:584.576   CPU_ReadMem(4 bytes @ 0x41002018)
+T4548 17378:584.576   Data:  05 03 01 10
+T4548 17378:584.576 - 0.361ms returns 1 (0x1)
+T1198 17378:594.816 JLINK_IsHalted()
+T1198 17378:594.816 - 0.338ms returns TRUE
+T1198 17378:594.816 JLINK_GetMOEs(...)
+T1198 17378:594.816   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T1198 17378:594.816 - 0.314ms returns 0x01
+T1198 17378:594.816 JLINK_ReadReg(R15 (PC))
+T1198 17378:594.816 - 0.008ms returns 0x000241CC
+T4548 17378:609.152 JLINK_BeginDownload(Flags = 0x00000000)
+T4548 17378:609.152 - 0.018ms
+T4548 17378:609.152 JLINK_WriteMem(0x00000000, 0xDBF8 Bytes, ...)
+T4548 17378:609.152   Data:  98 2C 00 20 B5 6C 00 00 AD 6D 00 00 AD 6D 00 00 ...
+T4548 17378:609.152   completely In flash
+T4548 17378:609.152 - 0.277ms returns 0xDBF8
+T4548 17378:609.152 JLINK_WriteMem(0x0000DBF8, 0x94 Bytes, ...)
+T4548 17378:609.152   Data:  40 1F 00 00 08 00 00 00 07 01 00 00 30 3A 73 64 ...
+T4548 17378:609.152   completely In flash
+T4548 17378:609.152 - 0.030ms returns 0x94
+T4548 17378:623.488 JLINK_EndDownload()
+T4548 17378:623.488    -- --------------------------------------
+T4548 17378:623.488    -- Flash bank @ 0x00000000: Default: L2 verify disabled because algorithm performs L1 verify
+T4548 17378:623.488    -- Start of determining dirty areas in flash cache
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000000 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000100 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000200 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000300 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000400 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000500 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000600 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000700 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000800 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000900 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000A00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000B00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000C00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000D00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000E00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00000F00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001000 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001100 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001200 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001300 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001400 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001500 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001600 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001700 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001800 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001900 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001A00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001B00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001C00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001D00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001E00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00001F00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002000 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002100 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002200 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002300 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002400 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002500 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002600 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002700 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002800 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002900 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002A00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002B00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002C00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002D00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002E00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00002F00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003000 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003100 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003200 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003300 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003400 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003500 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003600 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003700 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003800 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003900 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003A00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003B00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003C00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003D00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003E00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00003F00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004000 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004100 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004200 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004300 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004400 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004500 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004600 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004700 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004800 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004900 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004A00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004B00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004C00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004D00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004E00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00004F00 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005000 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005100 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005200 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005300 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005400 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005500 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005600 if necessary
+T4548 17378:623.488    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005A00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005B00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005C00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005D00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005E00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00005F00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006A00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006B00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006C00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006D00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006E00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00006F00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007A00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007B00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007C00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007D00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007E00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00007F00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008A00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008B00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008C00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008D00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008E00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00008F00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009A00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009B00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009C00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009D00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009E00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x00009F00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000A900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AA00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AB00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AC00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AD00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AE00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000AF00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000B900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BA00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BB00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BC00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BD00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BE00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000BF00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C300 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C400 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C500 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C600 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C700 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C800 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000C900 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CA00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CB00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CC00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CD00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CE00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000CF00 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D000 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D100 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D200 if necessary
+T4548 17378:625.536    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D300 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D400 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D500 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D600 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D700 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D800 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000D900 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DA00 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DB00 if necessary
+T4548 17378:627.584    -- Filling invalid ranges in sector buffer (flash cache) for sector @ 0x0000DC00 if necessary
+T4548 17378:627.584    -- End of determining dirty areas
+T4548 17378:627.584    -- Start of preparing flash programming
+T4548 17378:627.584    -- Calculating RAM usage
+T4548 17378:627.584    -- RAM usage = 3908 Bytes
+T4548 17378:627.584    -- Preserving CPU registers
+T4548 17378:627.584    -- Preparing target
+T4548 17378:627.584    -- Preserving target RAM temporarily used for programming
+T4548 17378:654.208    -- Downloading RAMCode
+T4548 17378:676.736    -- Preparing RAMCode
+T4548 17378:682.880    -- End of preparing flash programming
+T4548 17378:684.928    -- CPU speed could not be measured.
+T4548 17378:684.928    -- Start of comparing flash
+T4548 17378:684.928    -- CRC check was estimated as fastest method
+T4548 17378:697.216    -- Comparing range 0x0000 - 0x7FFF (128 Sectors, 32 KB), using multi-block CRC calculation
+T4548 17378:729.984    -- All CRCs match
+T4548 17378:729.984    -- Comparing range 0x8000 - 0xDCFF (93 Sectors, 23 KB), using multi-block CRC calculation
+T4548 17378:752.512    -- All CRCs match
+T4548 17378:752.512    -- Comparing range 0x0000 - 0x7FFF (128 Sectors, 32 KB), using alternative multi-block CRC calculation
+T4548 17378:783.232    -- All CRCs match
+T4548 17378:783.232    -- Comparing range 0x8000 - 0xDCFF (93 Sectors, 23 KB), using alternative multi-block CRC calculation
+T4548 17378:807.808    -- All CRCs match
+T4548 17378:807.808    -- End of comparing flash
+T4548 17378:807.808    -- Start of erasing sectors
+T4548 17378:807.808    -- End of erasing sectors
+T4548 17378:807.808    -- Start of flash programming
+T4548 17378:807.808    -- End of flash programming
+T4548 17378:807.808    -- Start of restoring
+T4548 17378:807.808    -- Restoring RAMCode
+T4548 17378:811.904    -- Restoring target memory
+T4548 17378:840.576    -- Restore target
+T4548 17378:840.576    -- Restoring CPU registers
+T4548 17378:840.576    -- End of restoring
+T4548 17378:840.576    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T4548 17378:840.576    -- Bank 0 @ 0x00000000: Skipped. Contents already match
+T4548 17378:842.624 - 219.278ms returns 0 (0x0)
+T4548 17378:842.624 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T4548 17378:842.624 - 0.027ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T4548 17378:842.624 JLINK_Reset()
+T4548 17378:842.624   CPU_ReadMem(4 bytes @ 0x20000000)
+T4548 17378:842.624   CPU_WriteMem(4 bytes @ 0x20000000)
+T4548 17378:842.624   ResetTarget() start
+T4548 17378:842.624    J-Link Script File: Executing ResetTarget()
+T4548 17378:842.624   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4548 17378:844.672   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4548 17378:844.672   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4548 17378:846.720   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4548 17378:846.720   CPU_ReadMem(4 bytes @ 0x41002100)
+T4548 17378:846.720   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4548 17378:848.768   ResetTarget() end - Took 3.48ms
+T4548 17378:850.816   CPU_WriteMem(4 bytes @ 0xE0002000)
+T4548 17378:850.816   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4548 17378:850.816   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4548 17378:852.864   CPU_WriteMem(4 bytes @ 0xE0001000)
+T4548 17378:852.864 - 9.673ms
+T4504 17378:969.600 JLINK_Halt()
+T4504 17378:969.600 - 0.013ms returns 0x00
+T4504 17378:969.600 JLINK_ReadReg(R15 (PC))
+T4504 17378:969.600 - 0.007ms returns 0x00006CB4
+T4504 17378:969.600 JLINK_ReadReg(R13 (SP))
+T4504 17378:969.600 - 0.007ms returns 0x20002C98
+T4504 17378:973.696 JLINK_ReadMemHW(0x00006CB4, 0x0004 Bytes, ...)
+T4504 17378:973.696   CPU_ReadMem(4 bytes @ 0x00006CB4)
+T4504 17378:973.696   Data:  80 B5 82 B0
+T4504 17378:973.696 - 0.375ms returns 0
+T4504 17378:973.696 JLINK_ReadReg(R0)
+T4504 17378:973.696 - 0.010ms returns 0x40001000
+T4504 17378:973.696 JLINK_ReadReg(R1)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadReg(R2)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadReg(R3)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadReg(R4)
+T4504 17378:973.696 - 0.005ms returns 0x200006B4
+T4504 17378:973.696 JLINK_ReadReg(R5)
+T4504 17378:973.696 - 0.005ms returns 0x200006D4
+T4504 17378:973.696 JLINK_ReadReg(R6)
+T4504 17378:973.696 - 0.005ms returns 0x200006D4
+T4504 17378:973.696 JLINK_ReadReg(R7)
+T4504 17378:973.696 - 0.005ms returns 0x20003498
+T4504 17378:973.696 JLINK_ReadReg(R8)
+T4504 17378:973.696 - 0.005ms returns 0xA5A5A5A5
+T4504 17378:973.696 JLINK_ReadReg(R9)
+T4504 17378:973.696 - 0.005ms returns 0xA5A5A5A5
+T4504 17378:973.696 JLINK_ReadReg(R10)
+T4504 17378:973.696 - 0.005ms returns 0xA5A5A5A5
+T4504 17378:973.696 JLINK_ReadReg(R11)
+T4504 17378:973.696 - 0.005ms returns 0xA5A5A5A5
+T4504 17378:973.696 JLINK_ReadReg(R12)
+T4504 17378:973.696 - 0.005ms returns 0x20000638
+T4504 17378:973.696 JLINK_ReadReg(R13 (SP))
+T4504 17378:973.696 - 0.005ms returns 0x20002C98
+T4504 17378:973.696 JLINK_ReadReg(R14)
+T4504 17378:973.696 - 0.005ms returns 0x20000341
+T4504 17378:973.696 JLINK_ReadReg(R15 (PC))
+T4504 17378:973.696 - 0.005ms returns 0x00006CB4
+T4504 17378:973.696 JLINK_ReadReg(XPSR)
+T4504 17378:973.696 - 0.005ms returns 0x21000000
+T4504 17378:973.696 JLINK_ReadReg(MSP)
+T4504 17378:973.696 - 0.004ms returns 0x20002C98
+T4504 17378:973.696 JLINK_ReadReg(PSP)
+T4504 17378:973.696 - 0.005ms returns 0x200006A8
+T4504 17378:973.696 JLINK_ReadReg(PRIMASK)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadReg(BASEPRI)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadReg(FAULTMASK)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadReg(CONTROL)
+T4504 17378:973.696 - 0.005ms returns 0x00000000
+T4504 17378:973.696 JLINK_ReadMemHW(0x00006CB4, 0x0002 Bytes, ...)
+T4504 17378:973.696   CPU_ReadMem(2 bytes @ 0x00006CB4)
+T4504 17378:973.696   Data:  80 B5
+T4504 17378:973.696 - 0.379ms returns 0
+T1198 17379:000.320 JLINK_IsHalted()
+T1198 17379:000.320 - 0.014ms returns TRUE
+T4504 17379:004.416 JLINK_ReadReg(R0)
+T4504 17379:004.416 - 0.011ms returns 0x40001000
+T4504 17379:004.416 JLINK_ReadReg(R1)
+T4504 17379:004.416 - 0.004ms returns 0x00000000
+T4504 17379:004.416 JLINK_ReadReg(R2)
+T4504 17379:004.416 - 0.004ms returns 0x00000000
+T4504 17379:004.416 JLINK_ReadReg(R3)
+T4504 17379:004.416 - 0.005ms returns 0x00000000
+T4504 17379:004.416 JLINK_ReadReg(R4)
+T4504 17379:004.416 - 0.005ms returns 0x200006B4
+T4504 17379:006.464 JLINK_ReadReg(R5)
+T4504 17379:006.464 - 0.004ms returns 0x200006D4
+T4504 17379:006.464 JLINK_ReadReg(R6)
+T4504 17379:006.464 - 0.004ms returns 0x200006D4
+T4504 17379:006.464 JLINK_ReadReg(R7)
+T4504 17379:006.464 - 0.004ms returns 0x20003498
+T4504 17379:006.464 JLINK_ReadReg(R8)
+T4504 17379:006.464 - 0.005ms returns 0xA5A5A5A5
+T4504 17379:006.464 JLINK_ReadReg(R9)
+T4504 17379:006.464 - 0.004ms returns 0xA5A5A5A5
+T4504 17379:006.464 JLINK_ReadReg(R10)
+T4504 17379:006.464 - 0.004ms returns 0xA5A5A5A5
+T4504 17379:006.464 JLINK_ReadReg(R11)
+T4504 17379:006.464 - 0.004ms returns 0xA5A5A5A5
+T4504 17379:006.464 JLINK_ReadReg(R12)
+T4504 17379:006.464 - 0.004ms returns 0x20000638
+T4504 17379:006.464 JLINK_ReadReg(R13 (SP))
+T4504 17379:006.464 - 0.005ms returns 0x20002C98
+T4504 17379:006.464 JLINK_ReadReg(R14)
+T4504 17379:006.464 - 0.004ms returns 0x20000341
+T4504 17379:006.464 JLINK_ReadReg(R15 (PC))
+T4504 17379:006.464 - 0.005ms returns 0x00006CB4
+T4504 17379:006.464 JLINK_ReadReg(XPSR)
+T4504 17379:006.464 - 0.005ms returns 0x21000000
+T4504 17379:006.464 JLINK_ReadReg(MSP)
+T4504 17379:006.464 - 0.004ms returns 0x20002C98
+T4504 17379:006.464 JLINK_ReadReg(PSP)
+T4504 17379:006.464 - 0.004ms returns 0x200006A8
+T4504 17379:006.464 JLINK_ReadReg(PRIMASK)
+T4504 17379:006.464 - 0.005ms returns 0x00000000
+T4504 17379:006.464 JLINK_ReadReg(BASEPRI)
+T4504 17379:006.464 - 0.005ms returns 0x00000000
+T4504 17379:006.464 JLINK_ReadReg(FAULTMASK)
+T4504 17379:006.464 - 0.004ms returns 0x00000000
+T4504 17379:006.464 JLINK_ReadReg(CONTROL)
+T4504 17379:006.464 - 0.004ms returns 0x00000000
+T4504 17379:012.608 JLINK_ReadMemHW(0x00006CB4, 0x0004 Bytes, ...)
+T4504 17379:012.608   CPU_ReadMem(4 bytes @ 0x00006CB4)
+T4504 17379:012.608   Data:  80 B5 82 B0
+T4504 17379:012.608 - 0.413ms returns 0
+T4504 17379:065.856 JLINK_SetResetType(JLINKARM_CM3_RESET_TYPE_NORMAL)
+T4504 17379:065.856 - 0.014ms returns JLINKARM_CM3_RESET_TYPE_NORMAL
+T4504 17379:065.856 JLINK_Reset()
+T4504 17379:065.856   ResetTarget() start
+T4504 17379:065.856    J-Link Script File: Executing ResetTarget()
+T4504 17379:065.856   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4504 17379:067.904   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4504 17379:067.904   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4504 17379:069.952   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4504 17379:069.952   CPU_ReadMem(4 bytes @ 0x41002100)
+T4504 17379:069.952   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4504 17379:069.952   ResetTarget() end - Took 3.93ms
+T4504 17379:074.048   CPU_WriteMem(4 bytes @ 0xE0002000)
+T4504 17379:074.048   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4504 17379:076.096   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4504 17379:076.096   CPU_WriteMem(4 bytes @ 0xE0001000)
+T4504 17379:076.096 - 9.523ms
+T1198 17379:076.096 JLINK_IsHalted()
+T1198 17379:076.096 - 0.010ms returns TRUE
+T1198 17379:076.096 JLINK_GetMOEs(...)
+T1198 17379:076.096   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T1198 17379:078.144 - 0.360ms returns 0x01
+T1198 17379:078.144 JLINK_ReadReg(R15 (PC))
+T1198 17379:078.144 - 0.006ms returns 0x00006CB4
+T4504 17379:086.336 JLINK_ReadReg(R15 (PC))
+T4504 17379:086.336 - 0.010ms returns 0x00006CB4
+T4504 17379:086.336 JLINK_ReadReg(R13 (SP))
+T4504 17379:086.336 - 0.005ms returns 0x20002C98
+T4504 17379:086.336 JLINK_ReadMemHW(0x00006CB4, 0x0004 Bytes, ...)
+T4504 17379:086.336   CPU_ReadMem(4 bytes @ 0x00006CB4)
+T4504 17379:086.336   Data:  80 B5 82 B0
+T4504 17379:086.336 - 0.433ms returns 0
+T4504 17379:112.960 JLINK_ReadReg(R0)
+T4504 17379:112.960 - 0.013ms returns 0x40001000
+T4504 17379:112.960 JLINK_ReadReg(R1)
+T4504 17379:112.960 - 0.005ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadReg(R2)
+T4504 17379:112.960 - 0.005ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadReg(R3)
+T4504 17379:112.960 - 0.004ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadReg(R4)
+T4504 17379:112.960 - 0.005ms returns 0x200006B4
+T4504 17379:112.960 JLINK_ReadReg(R5)
+T4504 17379:112.960 - 0.005ms returns 0x200006D4
+T4504 17379:112.960 JLINK_ReadReg(R6)
+T4504 17379:112.960 - 0.005ms returns 0x200006D4
+T4504 17379:112.960 JLINK_ReadReg(R7)
+T4504 17379:112.960 - 0.004ms returns 0x20003498
+T4504 17379:112.960 JLINK_ReadReg(R8)
+T4504 17379:112.960 - 0.004ms returns 0xA5A5A5A5
+T4504 17379:112.960 JLINK_ReadReg(R9)
+T4504 17379:112.960 - 0.005ms returns 0xA5A5A5A5
+T4504 17379:112.960 JLINK_ReadReg(R10)
+T4504 17379:112.960 - 0.004ms returns 0xA5A5A5A5
+T4504 17379:112.960 JLINK_ReadReg(R11)
+T4504 17379:112.960 - 0.004ms returns 0xA5A5A5A5
+T4504 17379:112.960 JLINK_ReadReg(R12)
+T4504 17379:112.960 - 0.005ms returns 0x20000638
+T4504 17379:112.960 JLINK_ReadReg(R13 (SP))
+T4504 17379:112.960 - 0.005ms returns 0x20002C98
+T4504 17379:112.960 JLINK_ReadReg(R14)
+T4504 17379:112.960 - 0.005ms returns 0x20000341
+T4504 17379:112.960 JLINK_ReadReg(R15 (PC))
+T4504 17379:112.960 - 0.005ms returns 0x00006CB4
+T4504 17379:112.960 JLINK_ReadReg(XPSR)
+T4504 17379:112.960 - 0.005ms returns 0x21000000
+T4504 17379:112.960 JLINK_ReadReg(MSP)
+T4504 17379:112.960 - 0.004ms returns 0x20002C98
+T4504 17379:112.960 JLINK_ReadReg(PSP)
+T4504 17379:112.960 - 0.004ms returns 0x200006A8
+T4504 17379:112.960 JLINK_ReadReg(PRIMASK)
+T4504 17379:112.960 - 0.004ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadReg(BASEPRI)
+T4504 17379:112.960 - 0.005ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadReg(FAULTMASK)
+T4504 17379:112.960 - 0.005ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadReg(CONTROL)
+T4504 17379:112.960 - 0.004ms returns 0x00000000
+T4504 17379:112.960 JLINK_ReadMem(0x20000340, 0x4 Bytes, ...)
+T4504 17379:112.960   CPU_ReadMem(64 bytes @ 0x20000340)
+T4504 17379:115.008    -- Updating C cache (64 bytes @ 0x20000340)
+T4504 17379:115.008    -- Read from C cache (4 bytes @ 0x20000340)
+T4504 17379:115.008   Data:  00 00 00 00
+T4504 17379:115.008 - 1.174ms returns 0
+T4504 17379:115.008 JLINK_ReadMem(0x200001C8, 0x2 Bytes, ...)
+T4504 17379:115.008   CPU_ReadMem(64 bytes @ 0x200001C0)
+T4504 17379:117.056    -- Updating C cache (64 bytes @ 0x200001C0)
+T4504 17379:117.056    -- Read from C cache (2 bytes @ 0x200001C8)
+T4504 17379:117.056   Data:  00 00
+T4504 17379:117.056 - 1.216ms returns 0
+T4504 17379:117.056 JLINK_ReadMem(0x200001CA, 0x2 Bytes, ...)
+T4504 17379:117.056    -- Read from C cache (2 bytes @ 0x200001CA)
+T4504 17379:117.056   Data:  00 00
+T4504 17379:117.056 - 0.026ms returns 0
+T4504 17379:117.056 JLINK_ReadMem(0x200001CC, 0x2 Bytes, ...)
+T4504 17379:117.056    -- Read from C cache (2 bytes @ 0x200001CC)
+T4504 17379:117.056   Data:  00 00
+T4504 17379:117.056 - 0.048ms returns 0
+T4504 17379:117.056 JLINK_ReadMem(0x200001CE, 0x2 Bytes, ...)
+T4504 17379:117.056    -- Read from C cache (2 bytes @ 0x200001CE)
+T4504 17379:117.056   Data:  00 00
+T4504 17379:117.056 - 0.025ms returns 0
+T4504 17379:117.056 JLINK_ReadMem(0x200001D0, 0x2 Bytes, ...)
+T4504 17379:117.056    -- Read from C cache (2 bytes @ 0x200001D0)
+T4504 17379:117.056   Data:  00 00
+T4504 17379:117.056 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001D2, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001D2)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.026ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001D4, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001D4)
+T4504 17379:119.104   Data:  43 00
+T4504 17379:119.104 - 0.050ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001D6, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001D6)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.029ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001D8, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001D8)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.026ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001DA, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001DA)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001DC, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001DC)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001DE, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001DE)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001E0, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001E0)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.048ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001E2, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001E2)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.067ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001E4, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001E4)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001E6, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001E6)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001E8, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001E8)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.042ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001EA, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001EA)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001EC, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001EC)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.043ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001EE, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001EE)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001F0, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001F0)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001F2, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001F2)
+T4504 17379:119.104   Data:  00 00
+T4504 17379:119.104 - 0.042ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001F4, 0x2 Bytes, ...)
+T4504 17379:119.104    -- Read from C cache (2 bytes @ 0x200001F4)
+T4504 17379:119.104   Data:  43 00
+T4504 17379:119.104 - 0.023ms returns 0
+T4504 17379:119.104 JLINK_ReadMem(0x200001F6, 0x2 Bytes, ...)
+T4504 17379:121.152    -- Read from C cache (2 bytes @ 0x200001F6)
+T4504 17379:121.152   Data:  00 00
+T4504 17379:121.152 - 0.023ms returns 0
+T4504 17379:121.152 JLINK_ReadMem(0x200001F8, 0x2 Bytes, ...)
+T4504 17379:121.152    -- Read from C cache (2 bytes @ 0x200001F8)
+T4504 17379:121.152   Data:  00 00
+T4504 17379:121.152 - 0.023ms returns 0
+T4504 17379:121.152 JLINK_ReadMem(0x200001FA, 0x2 Bytes, ...)
+T4504 17379:121.152    -- Read from C cache (2 bytes @ 0x200001FA)
+T4504 17379:121.152   Data:  00 00
+T4504 17379:121.152 - 0.028ms returns 0
+T4504 17379:121.152 JLINK_ReadMem(0x200001FC, 0x2 Bytes, ...)
+T4504 17379:121.152    -- Read from C cache (2 bytes @ 0x200001FC)
+T4504 17379:121.152   Data:  00 00
+T4504 17379:121.152 - 0.023ms returns 0
+T4504 17379:121.152 JLINK_ReadMem(0x200001FE, 0x2 Bytes, ...)
+T4504 17379:121.152    -- Read from C cache (2 bytes @ 0x200001FE)
+T4504 17379:121.152   Data:  00 00
+T4504 17379:121.152 - 0.027ms returns 0
+T4504 17379:121.152 JLINK_ReadMem(0x20000200, 0x2 Bytes, ...)
+T4504 17379:121.152   CPU_ReadMem(64 bytes @ 0x20000200)
+T4504 17379:123.200    -- Updating C cache (64 bytes @ 0x20000200)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x20000200)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 1.157ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x20000202, 0x2 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x20000202)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x20000204, 0x2 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x20000204)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x20000206, 0x2 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x20000206)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x20000340, 0x4 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (4 bytes @ 0x20000340)
+T4504 17379:123.200   Data:  00 00 00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x200001C8, 0x2 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x200001C8)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x200001CA, 0x2 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x200001CA)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:123.200 JLINK_ReadMem(0x200001CC, 0x2 Bytes, ...)
+T4504 17379:123.200    -- Read from C cache (2 bytes @ 0x200001CC)
+T4504 17379:123.200   Data:  00 00
+T4504 17379:123.200 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001CE, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001CE)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001D0, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001D0)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001D2, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001D2)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001D4, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001D4)
+T4504 17379:125.248   Data:  43 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001D6, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001D6)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001D8, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001D8)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001DA, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001DA)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001DC, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001DC)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.022ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001DE, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001DE)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.025ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001E0, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001E0)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.023ms returns 0
+T4504 17379:125.248 JLINK_ReadMem(0x200001E2, 0x2 Bytes, ...)
+T4504 17379:125.248    -- Read from C cache (2 bytes @ 0x200001E2)
+T4504 17379:125.248   Data:  00 00
+T4504 17379:125.248 - 0.045ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001E4, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001E4)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001E6, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001E6)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001E8, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001E8)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001EA, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001EA)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001EC, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001EC)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001EE, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001EE)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.042ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001F0, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001F0)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.024ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001F2, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001F2)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001F4, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001F4)
+T4504 17379:127.296   Data:  43 00
+T4504 17379:127.296 - 0.042ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001F6, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001F6)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001F8, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001F8)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.041ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001FA, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001FA)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001FC, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001FC)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.044ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x200001FE, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x200001FE)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x20000200, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x20000200)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x20000202, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x20000202)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x20000204, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x20000204)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:127.296 JLINK_ReadMem(0x20000206, 0x2 Bytes, ...)
+T4504 17379:127.296    -- Read from C cache (2 bytes @ 0x20000206)
+T4504 17379:127.296   Data:  00 00
+T4504 17379:127.296 - 0.023ms returns 0
+T4504 17379:160.064 JLINK_ReadMemHW(0x0000AE30, 0x0001 Bytes, ...)
+T4504 17379:160.064   CPU_ReadMem(1 bytes @ 0x0000AE30)
+T4504 17379:160.064   Data:  90
+T4504 17379:160.064 - 0.570ms returns 0
+T4504 17379:190.784 JLINK_ReadReg(R15 (PC))
+T4504 17379:190.784 - 0.012ms returns 0x00006CB4
+T4504 17379:190.784 JLINK_GetNumBPUnits(Type = 0xFFFFFF02)
+T4504 17379:190.784 - 0.007ms returns 0x04
+T4504 17379:190.784 JLINK_SetBPEx(Addr = 0x0000AE30, Type = 0xFFFFFFF2)
+T4504 17379:190.784 - 0.006ms returns 0x00000001
+T4504 17379:190.784 JLINK_GetBPInfo(BPHandle = 1)
+T4504 17379:190.784 - 0.004ms returns 0x0
+T4504 17379:190.784 JLINK_Go()
+T4504 17379:190.784   CPU_WriteMem(4 bytes @ 0xE0002000)
+T4504 17379:190.784   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4504 17379:190.784   CPU_WriteMem(4 bytes @ 0xE0001000)
+T4504 17379:192.832   CPU_WriteMem(4 bytes @ 0xE000ED30)
+T4504 17379:192.832   CPU_WriteMem(4 bytes @ 0xE0002008)
+T4504 17379:192.832   CPU_WriteMem(4 bytes @ 0xE000200C)
+T4504 17379:192.832   CPU_WriteMem(4 bytes @ 0xE0002010)
+T4504 17379:192.832   CPU_WriteMem(4 bytes @ 0xE0002014)
+T4504 17379:192.832   CPU_WriteMem(4 bytes @ 0xE0001004)
+T4504 17379:192.832   Memory map 'after startup completion point' is active
+T4504 17379:192.832 - 4.102ms
+T1198 17379:192.832 JLINK_IsHalted()
+T1198 17379:194.880   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17379:194.880 - 0.747ms returns FALSE
+T1198 17379:217.408 JLINK_IsHalted()
+T1198 17379:219.456 - 3.736ms returns TRUE
+T1198 17379:219.456 JLINK_GetMOEs(...)
+T1198 17379:219.456   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T1198 17379:219.456 - 0.371ms returns 0x01
+T1198 17379:219.456 JLINK_ReadReg(R15 (PC))
+T1198 17379:219.456 - 0.007ms returns 0x0000AE30
+T4504 17379:225.600 JLINK_ReadReg(R15 (PC))
+T4504 17379:225.600 - 0.011ms returns 0x0000AE30
+T4504 17379:225.600 JLINK_ReadReg(R13 (SP))
+T4504 17379:225.600 - 0.005ms returns 0x20002C88
+T4504 17379:227.648 JLINK_ReadMemHW(0x0000AE30, 0x0004 Bytes, ...)
+T4504 17379:227.648   CPU_ReadMem(4 bytes @ 0x0000AE30)
+T4504 17379:227.648   Data:  90 B5 8B B0
+T4504 17379:227.648 - 0.473ms returns 0
+T4504 17379:252.224 JLINK_WriteU32_64(0xE000EDFC, 0x01000000)
+T4504 17379:252.224   Debug reg: DEMCR
+T4504 17379:252.224   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4504 17379:254.272 - 0.892ms returns 0 (0x00000000)
+T4504 17379:254.272 JLINK_ReadMem(0xE0001000, 0x4 Bytes, ...)
+T4504 17379:254.272   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4504 17379:254.272   Data:  00 00 00 20
+T4504 17379:254.272   Debug reg: DWT_CTRL
+T4504 17379:254.272 - 0.472ms returns 0
+T4504 17379:254.272 JLINK_WriteU32_64(0xE0001000, 0x20000001)
+T4504 17379:254.272   Debug reg: DWT_CTRL
+T4504 17379:254.272 - 0.016ms returns 0 (0x00000000)
+T4504 17379:254.272 JLINK_WriteU32_64(0xE0001028, 0x00000100)
+T4504 17379:254.272   Debug reg: DWT_FUNC[0]
+T4504 17379:254.272 - 0.016ms returns 0 (0x00000000)
+T4504 17379:254.272 JLINK_ReadMem(0xE0001028, 0x4 Bytes, ...)
+T4504 17379:254.272   CPU_WriteMem(4 bytes @ 0xE0001028)
+T4504 17379:254.272   CPU_ReadMem(4 bytes @ 0xE0001028)
+T4504 17379:254.272   Data:  00 00 00 00
+T4504 17379:254.272   Debug reg: DWT_FUNC[0]
+T4504 17379:254.272 - 0.819ms returns 0
+T4504 17379:256.320 JLINK_WriteU32_64(0xE0001024, 0x0000001F)
+T4504 17379:256.320   Debug reg: DWT_MASK[0]
+T4504 17379:256.320 - 0.022ms returns 0 (0x00000000)
+T4504 17379:256.320 JLINK_ReadMem(0xE0001024, 0x4 Bytes, ...)
+T4504 17379:256.320   CPU_WriteMem(4 bytes @ 0xE0001024)
+T4504 17379:256.320   CPU_ReadMem(4 bytes @ 0xE0001024)
+T4504 17379:256.320   Data:  1F 00 00 00
+T4504 17379:256.320   Debug reg: DWT_MASK[0]
+T4504 17379:256.320 - 0.738ms returns 0
+T4504 17379:256.320 JLINK_WriteU32_64(0xE0001038, 0x00000100)
+T4504 17379:256.320   Debug reg: DWT_FUNC[1]
+T4504 17379:256.320 - 0.016ms returns 0 (0x00000000)
+T4504 17379:256.320 JLINK_ReadMem(0xE0001038, 0x4 Bytes, ...)
+T4504 17379:256.320   CPU_WriteMem(4 bytes @ 0xE0001038)
+T4504 17379:258.368   CPU_ReadMem(4 bytes @ 0xE0001038)
+T4504 17379:258.368   Data:  00 00 00 00
+T4504 17379:258.368   Debug reg: DWT_FUNC[1]
+T4504 17379:258.368 - 0.696ms returns 0
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001034, 0x0000001F)
+T4504 17379:258.368   Debug reg: DWT_MASK[1]
+T4504 17379:258.368 - 0.020ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_ReadMem(0xE0001034, 0x4 Bytes, ...)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001034)
+T4504 17379:258.368   CPU_ReadMem(4 bytes @ 0xE0001034)
+T4504 17379:258.368   Data:  1F 00 00 00
+T4504 17379:258.368   Debug reg: DWT_MASK[1]
+T4504 17379:258.368 - 0.755ms returns 0
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001020, 0x00000000)
+T4504 17379:258.368   Debug reg: DWT_COMP[0]
+T4504 17379:258.368 - 0.015ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001024, 0x00000000)
+T4504 17379:258.368   Debug reg: DWT_MASK[0]
+T4504 17379:258.368 - 0.013ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001028, 0x00000000)
+T4504 17379:258.368   Debug reg: DWT_FUNC[0]
+T4504 17379:258.368 - 0.013ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001030, 0x00000000)
+T4504 17379:258.368   Debug reg: DWT_COMP[1]
+T4504 17379:258.368 - 0.014ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001034, 0x00000000)
+T4504 17379:258.368   Debug reg: DWT_MASK[1]
+T4504 17379:258.368 - 0.013ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_WriteU32_64(0xE0001038, 0x00000000)
+T4504 17379:258.368   Debug reg: DWT_FUNC[1]
+T4504 17379:258.368 - 0.013ms returns 0 (0x00000000)
+T4504 17379:258.368 JLINK_GetBPInfo(BPHandle = 1)
+T4504 17379:258.368 - 0.004ms returns 0x0
+T4504 17379:258.368 JLINK_ClrBPEx(BPHandle = 0x00000001)
+T4504 17379:258.368 - 0.005ms returns 0x00
+T4504 17379:258.368 JLINK_ReadReg(R15 (PC))
+T4504 17379:258.368 - 0.006ms returns 0x0000AE30
+T4504 17379:258.368 JLINK_Go()
+T4504 17379:258.368   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE000ED30)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001020)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001030)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001024)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001034)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001028)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0001038)
+T4504 17379:258.368   CPU_WriteMem(4 bytes @ 0xE0002008)
+T4504 17379:262.464 - 3.485ms
+T1198 17379:262.464 JLINK_IsHalted()
+T1198 17379:262.464   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17379:262.464 - 0.736ms returns FALSE
+T1198 17379:303.424 JLINK_IsHalted()
+T1198 17379:303.424   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17379:305.472 - 0.923ms returns FALSE
+T1198 17379:463.168 JLINK_IsHalted()
+T1198 17379:463.168   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17379:465.216 - 0.990ms returns FALSE
+T1198 17379:665.920 JLINK_IsHalted()
+T1198 17379:665.920   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17379:665.920 - 0.778ms returns FALSE
+T1198 17379:866.624 JLINK_IsHalted()
+T1198 17379:866.624   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17379:866.624 - 0.997ms returns FALSE
+T1198 17380:067.328 JLINK_IsHalted()
+T1198 17380:069.376   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17380:069.376 - 0.897ms returns FALSE
+T1198 17380:268.032 JLINK_IsHalted()
+T1198 17380:268.032   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17380:270.080 - 0.897ms returns FALSE
+T1198 17380:468.736 JLINK_IsHalted()
+T1198 17380:470.784   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17380:470.784 - 0.761ms returns FALSE
+T1198 17380:669.440 JLINK_IsHalted()
+T1198 17380:669.440   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17380:671.488 - 1.051ms returns FALSE
+T1198 17380:872.192 JLINK_IsHalted()
+T1198 17380:872.192   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17380:872.192 - 0.842ms returns FALSE
+T1198 17381:074.944 JLINK_IsHalted()
+T1198 17381:074.944   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17381:074.944 - 0.733ms returns FALSE
+T1198 17381:273.600 JLINK_IsHalted()
+T1198 17381:273.600   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17381:275.648 - 0.901ms returns FALSE
+T1198 17381:476.352 JLINK_IsHalted()
+T1198 17381:476.352   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17381:478.400 - 0.900ms returns FALSE
+T1198 17381:677.056 JLINK_IsHalted()
+T1198 17381:679.104   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17381:679.104 - 0.987ms returns FALSE
+T1198 17381:879.808 JLINK_IsHalted()
+T1198 17381:879.808   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17381:879.808 - 0.975ms returns FALSE
+T1198 17382:080.512 JLINK_IsHalted()
+T1198 17382:080.512   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17382:082.560 - 0.751ms returns FALSE
+T1198 17382:281.216 JLINK_IsHalted()
+T1198 17382:281.216   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17382:281.216 - 0.767ms returns FALSE
+T1198 17382:483.968 JLINK_IsHalted()
+T1198 17382:483.968   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17382:486.016 - 0.885ms returns FALSE
+T1198 17382:682.624 JLINK_IsHalted()
+T1198 17382:684.672   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17382:684.672 - 0.868ms returns FALSE
+T1198 17382:887.424 JLINK_IsHalted()
+T1198 17382:887.424   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17382:887.424 - 1.010ms returns FALSE
+T1198 17383:088.128 JLINK_IsHalted()
+T1198 17383:090.176   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17383:090.176 - 1.107ms returns FALSE
+T1198 17383:288.832 JLINK_IsHalted()
+T1198 17383:290.880   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17383:290.880 - 0.940ms returns FALSE
+T1198 17383:491.584 JLINK_IsHalted()
+T1198 17383:491.584   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17383:493.632 - 0.996ms returns FALSE
+T1198 17383:692.288 JLINK_IsHalted()
+T1198 17383:692.288   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17383:694.336 - 1.092ms returns FALSE
+T1198 17383:895.040 JLINK_IsHalted()
+T1198 17383:895.040   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17383:895.040 - 0.906ms returns FALSE
+T1198 17384:093.696 JLINK_IsHalted()
+T1198 17384:095.744   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17384:095.744 - 0.825ms returns FALSE
+T1198 17384:296.448 JLINK_IsHalted()
+T1198 17384:296.448   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17384:296.448 - 0.914ms returns FALSE
+T1198 17384:497.152 JLINK_IsHalted()
+T1198 17384:497.152   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17384:497.152 - 1.036ms returns FALSE
+T1198 17384:697.856 JLINK_IsHalted()
+T1198 17384:697.856   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17384:697.856 - 0.961ms returns FALSE
+T1198 17384:898.560 JLINK_IsHalted()
+T1198 17384:900.608   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17384:900.608 - 1.064ms returns FALSE
+T1198 17385:099.264 JLINK_IsHalted()
+T1198 17385:099.264   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17385:101.312 - 0.775ms returns FALSE
+T1198 17385:302.016 JLINK_IsHalted()
+T1198 17385:302.016   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17385:302.016 - 0.813ms returns FALSE
+T1198 17385:502.720 JLINK_IsHalted()
+T1198 17385:502.720   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17385:502.720 - 0.902ms returns FALSE
+T1198 17385:705.472 JLINK_IsHalted()
+T1198 17385:705.472   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17385:705.472 - 0.959ms returns FALSE
+T1198 17385:906.176 JLINK_IsHalted()
+T1198 17385:908.224   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17385:908.224 - 0.915ms returns FALSE
+T1198 17386:106.880 JLINK_IsHalted()
+T1198 17386:106.880   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17386:108.928 - 0.846ms returns FALSE
+T1198 17386:309.632 JLINK_IsHalted()
+T1198 17386:311.680   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17386:311.680 - 0.869ms returns FALSE
+T1198 17386:510.336 JLINK_IsHalted()
+T1198 17386:510.336   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17386:510.336 - 0.879ms returns FALSE
+T1198 17386:711.040 JLINK_IsHalted()
+T1198 17386:711.040   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17386:713.088 - 0.737ms returns FALSE
+T1198 17386:911.744 JLINK_IsHalted()
+T1198 17386:911.744   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17386:911.744 - 0.739ms returns FALSE
+T1198 17387:112.448 JLINK_IsHalted()
+T1198 17387:114.496   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17387:114.496 - 0.760ms returns FALSE
+T1198 17387:313.152 JLINK_IsHalted()
+T1198 17387:315.200   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17387:315.200 - 0.990ms returns FALSE
+T1198 17387:515.904 JLINK_IsHalted()
+T1198 17387:515.904   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17387:515.904 - 1.015ms returns FALSE
+T1198 17387:716.608 JLINK_IsHalted()
+T1198 17387:718.656   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17387:718.656 - 0.857ms returns FALSE
+T1198 17387:917.312 JLINK_IsHalted()
+T1198 17387:917.312   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17387:919.360 - 1.122ms returns FALSE
+T1198 17388:120.064 JLINK_IsHalted()
+T1198 17388:120.064   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17388:120.064 - 1.062ms returns FALSE
+T1198 17388:320.768 JLINK_IsHalted()
+T1198 17388:320.768   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17388:320.768 - 0.963ms returns FALSE
+T1198 17388:523.520 JLINK_IsHalted()
+T1198 17388:523.520   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17388:523.520 - 0.821ms returns FALSE
+T1198 17388:724.224 JLINK_IsHalted()
+T1198 17388:724.224   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17388:726.272 - 0.946ms returns FALSE
+T1198 17388:926.976 JLINK_IsHalted()
+T1198 17388:926.976   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17388:926.976 - 0.790ms returns FALSE
+T1198 17389:129.728 JLINK_IsHalted()
+T1198 17389:129.728   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17389:129.728 - 0.958ms returns FALSE
+T1198 17389:330.432 JLINK_IsHalted()
+T1198 17389:330.432   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17389:332.480 - 1.029ms returns FALSE
+T1198 17389:531.136 JLINK_IsHalted()
+T1198 17389:531.136   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17389:531.136 - 0.902ms returns FALSE
+T1198 17389:733.888 JLINK_IsHalted()
+T1198 17389:733.888   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17389:735.936 - 0.811ms returns FALSE
+T1198 17389:936.640 JLINK_IsHalted()
+T1198 17389:936.640   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17389:938.688 - 0.961ms returns FALSE
+T1198 17390:137.344 JLINK_IsHalted()
+T1198 17390:137.344   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17390:137.344 - 1.002ms returns FALSE
+T1198 17390:342.144 JLINK_IsHalted()
+T1198 17390:342.144   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17390:342.144 - 0.878ms returns FALSE
+T1198 17390:540.800 JLINK_IsHalted()
+T1198 17390:542.848   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17390:542.848 - 1.001ms returns FALSE
+T1198 17390:743.552 JLINK_IsHalted()
+T1198 17390:743.552   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17390:743.552 - 0.823ms returns FALSE
+T1198 17390:944.256 JLINK_IsHalted()
+T1198 17390:944.256   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17390:946.304 - 0.859ms returns FALSE
+T1198 17391:144.960 JLINK_IsHalted()
+T1198 17391:144.960   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17391:144.960 - 1.145ms returns FALSE
+T1198 17391:347.712 JLINK_IsHalted()
+T1198 17391:347.712   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17391:347.712 - 0.926ms returns FALSE
+T1198 17391:548.416 JLINK_IsHalted()
+T1198 17391:548.416   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17391:550.464 - 1.103ms returns FALSE
+T1198 17391:751.168 JLINK_IsHalted()
+T1198 17391:751.168   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17391:751.168 - 0.820ms returns FALSE
+T1198 17391:951.872 JLINK_IsHalted()
+T1198 17391:951.872   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17391:951.872 - 1.052ms returns FALSE
+T1198 17392:152.576 JLINK_IsHalted()
+T1198 17392:152.576   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17392:152.576 - 0.798ms returns FALSE
+T1198 17392:353.280 JLINK_IsHalted()
+T1198 17392:353.280   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17392:353.280 - 1.065ms returns FALSE
+T1198 17392:553.984 JLINK_IsHalted()
+T1198 17392:553.984   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17392:556.032 - 1.120ms returns FALSE
+T1198 17392:758.784 JLINK_IsHalted()
+T1198 17392:758.784   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17392:758.784 - 0.995ms returns FALSE
+T1198 17392:959.488 JLINK_IsHalted()
+T1198 17392:959.488   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17392:961.536 - 0.959ms returns FALSE
+T1198 17393:160.192 JLINK_IsHalted()
+T1198 17393:160.192   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17393:160.192 - 1.154ms returns FALSE
+T1198 17393:364.992 JLINK_IsHalted()
+T1198 17393:364.992   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17393:364.992 - 1.292ms returns FALSE
+T1198 17393:565.696 JLINK_IsHalted()
+T1198 17393:565.696   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17393:565.696 - 1.052ms returns FALSE
+T1198 17393:766.400 JLINK_IsHalted()
+T1198 17393:766.400   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17393:766.400 - 1.066ms returns FALSE
+T1198 17393:969.152 JLINK_IsHalted()
+T1198 17393:969.152   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17393:971.200 - 0.984ms returns FALSE
+T1198 17394:169.856 JLINK_IsHalted()
+T1198 17394:169.856   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17394:171.904 - 1.078ms returns FALSE
+T1198 17394:372.608 JLINK_IsHalted()
+T1198 17394:372.608   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17394:372.608 - 0.858ms returns FALSE
+T1198 17394:571.264 JLINK_IsHalted()
+T1198 17394:571.264   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17394:573.312 - 1.016ms returns FALSE
+T1198 17394:776.064 JLINK_IsHalted()
+T1198 17394:776.064   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17394:778.112 - 0.762ms returns FALSE
+T1198 17394:978.816 JLINK_IsHalted()
+T1198 17394:978.816   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17394:978.816 - 0.828ms returns FALSE
+T1198 17395:179.520 JLINK_IsHalted()
+T1198 17395:179.520   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17395:179.520 - 0.840ms returns FALSE
+T1198 17395:380.224 JLINK_IsHalted()
+T1198 17395:380.224   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17395:380.224 - 0.746ms returns FALSE
+T1198 17395:580.928 JLINK_IsHalted()
+T1198 17395:580.928   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17395:582.976 - 0.738ms returns FALSE
+T1198 17395:781.632 JLINK_IsHalted()
+T1198 17395:781.632   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17395:783.680 - 0.761ms returns FALSE
+T1198 17395:984.384 JLINK_IsHalted()
+T1198 17395:986.432   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17395:986.432 - 0.847ms returns FALSE
+T1198 17396:187.136 JLINK_IsHalted()
+T1198 17396:187.136   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17396:189.184 - 0.980ms returns FALSE
+T1198 17396:387.840 JLINK_IsHalted()
+T1198 17396:387.840   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17396:387.840 - 0.779ms returns FALSE
+T1198 17396:590.592 JLINK_IsHalted()
+T1198 17396:590.592   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17396:590.592 - 0.898ms returns FALSE
+T1198 17396:789.248 JLINK_IsHalted()
+T1198 17396:789.248   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17396:789.248 - 0.920ms returns FALSE
+T1198 17396:992.000 JLINK_IsHalted()
+T1198 17396:994.048   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17396:994.048 - 0.845ms returns FALSE
+T1198 17397:192.704 JLINK_IsHalted()
+T1198 17397:192.704   CPU_ReadMem(4 bytes @ 0x41002100)
+T1198 17397:192.704 - 0.740ms returns FALSE
+T4504 17397:301.248 JLINK_Halt()
+T4504 17397:305.344 - 3.549ms returns 0x00
+T1198 17397:395.456 JLINK_IsHalted()
+T1198 17397:395.456 - 0.028ms returns TRUE
+T1198 17397:395.456 JLINK_GetMOEs(...)
+T1198 17397:395.456   CPU_ReadMem(4 bytes @ 0xE000ED30)
+T1198 17397:395.456 - 0.411ms returns 0x01
+T1198 17397:395.456 JLINK_ReadReg(R15 (PC))
+T1198 17397:395.456 - 0.007ms returns 0x00010CB4
+T1198 17397:594.112 JLINK_IsHalted()
+T1198 17397:594.112 - 0.022ms returns TRUE
+T4548 17397:596.160 JLINK_ResetPullsRESET(ON)
+T4548 17397:596.160 - 0.013ms
+T4548 17397:596.160 JLINK_ResetNoHalt()
+T4548 17397:596.160   InitTarget() start
+T4548 17397:596.160    J-Link Script File: Executing InitTarget()
+T4548 17397:596.160   InitTarget()
+T4548 17397:598.208   InitTarget() end - Took 2.38ms
+T4548 17397:600.256   Found SW-DP with ID 0x0BC11477
+T4548 17397:600.256   DPIDR: 0x0BC11477
+T4548 17397:600.256   CoreSight SoC-400 or earlier
+T4548 17397:600.256   AP map detection skipped. Manually configured AP map found.
+T4548 17397:600.256   AP[0]: AHB-AP (IDR: Not set)
+T4548 17397:600.256   AP[0]: Core found
+T4548 17397:600.256   AP[0]: AHB-AP ROM base: 0x41003000
+T4548 17397:602.304   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T4548 17397:602.304   Found Cortex-M0 r0p1, Little endian.
+T4548 17397:602.304   -- Max. mem block: 0x000027A0
+T4548 17397:602.304   Cortex-M: The connected J-Link (S/N 801056870) uses an old firmware module: V2 (current is 3)
+T4548 17397:602.304   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4548 17397:602.304   CPU_ReadMem(4 bytes @ 0xE0002000)
+T4548 17397:602.304   FPUnit: 4 code (BP) slots and 0 literal slots
+T4548 17397:602.304   CPU_ReadMem(4 bytes @ 0xE0001000)
+T4548 17397:604.352   CoreSight components:
+T4548 17397:604.352   ROMTbl[0] @ 41003000
+T4548 17397:604.352   CPU_ReadMem(64 bytes @ 0x41003000)
+T4548 17397:604.352   CPU_ReadMem(32 bytes @ 0xE00FFFE0)
+T4548 17397:604.352   [0][0]: E00FF000 CID B105100D PID 000BB4C0 ROM Table
+T4548 17397:604.352   ROMTbl[1] @ E00FF000
+T4548 17397:604.352   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T4548 17397:606.400   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T4548 17397:606.400   [1][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T4548 17397:606.400   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T4548 17397:608.448   [1][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T4548 17397:608.448   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T4548 17397:608.448   [1][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T4548 17397:608.448   CPU_ReadMem(32 bytes @ 0x41006FE0)
+T4548 17397:608.448   [0][1]: 41006000 CID B105900D PID 001BB932 MTB-M0+
+T4548 17397:608.448   JLINK_Reset()
+T4548 17397:608.448     Memory map 'before startup completion point' is active
+T4548 17397:608.448     ResetTarget() start
+T4548 17397:608.448      J-Link Script File: Executing ResetTarget()
+T4548 17397:608.448     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4548 17397:608.448     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4548 17397:608.448     CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T4548 17397:610.496     CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T4548 17397:610.496     CPU_ReadMem(4 bytes @ 0x41002100)
+T4548 17397:610.496     CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T4548 17397:610.496     ResetTarget() end - Took 3.20ms
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE0002000)
+T4548 17397:616.640     CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T4548 17397:616.640     CPU_ReadMem(4 bytes @ 0xE0001000)
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE0001000)
+T4548 17397:616.640   - 8.539ms
+T4548 17397:616.640   JLINK_Go()
+T4548 17397:616.640     CPU_ReadMem(4 bytes @ 0xE0001000)
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE0001000)
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE0002008)
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE000200C)
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE0002010)
+T4548 17397:616.640     CPU_WriteMem(4 bytes @ 0xE0002014)
+T4548 17397:618.688     CPU_WriteMem(4 bytes @ 0xE0001004)
+T4548 17397:618.688     Memory map 'after startup completion point' is active
+T4548 17397:618.688   - 2.822ms
+T4548 17397:618.688 - 24.264ms
+T4548 17397:628.928 JLINK_Close()
+T4548 17397:628.928   CPU is running
+T4548 17397:628.928   CPU_WriteMem(4 bytes @ 0xE0002008)
+T4548 17397:628.928   CPU is running
+T4548 17397:628.928   CPU_WriteMem(4 bytes @ 0xE000200C)
+T4548 17397:628.928   CPU is running
+T4548 17397:628.928   CPU_WriteMem(4 bytes @ 0xE0002010)
+T4548 17397:630.976   CPU is running
+T4548 17397:630.976   CPU_WriteMem(4 bytes @ 0xE0002014)
+T4548 17397:643.264 - 15.710ms
+T4548 17397:643.264   
+T4548 17397:643.264   Closed

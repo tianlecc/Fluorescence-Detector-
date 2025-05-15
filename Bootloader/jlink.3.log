@@ -1,0 +1,9 @@
+T4548 6558:809.088   SEGGER J-Link V7.98 Log File
+T4548 6558:809.088   DLL Compiled: Jul 17 2024 15:27:15
+T4548 6558:809.088   Logging started @ 2025-04-22 23:23
+T4548 6558:809.088   Process: C:\Program Files (x86)\Atmel\Studio\7.0\atbackend\atbackend.exe
+T4548 6558:809.088 - 54.167ms
+T4548 6558:817.792 JLINK_Close()
+T4548 6558:826.496 - 8.601ms
+T4548 6558:826.496   
+T4548 6558:826.496   Closed
